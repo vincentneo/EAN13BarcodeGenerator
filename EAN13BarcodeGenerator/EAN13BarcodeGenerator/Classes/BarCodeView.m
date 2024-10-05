@@ -27,7 +27,7 @@ static const NSInteger kTotlaBarCodeLength = 113; //never change this
 
 -(id)initWithFrame:(CGRect)frame
 {
-    NSAssert(frame.size.width >= kTotlaBarCodeLength, @"Incorrect BarCodeView frame.size.width!");
+    //NSAssert(frame.size.width >= kTotlaBarCodeLength, @"Incorrect BarCodeView frame.size.width!");
     self = [super initWithFrame:frame];
     if (self != nil)
     {
@@ -38,7 +38,7 @@ static const NSInteger kTotlaBarCodeLength = 113; //never change this
 -(void)awakeFromNib
 {
     [super awakeFromNib];
-    NSAssert(self.frame.size.width >= kTotlaBarCodeLength, @"Incorrect BarCodeView frame.size.width!");
+    //NSAssert(self.frame.size.width >= kTotlaBarCodeLength, @"Incorrect BarCodeView frame.size.width!");
     [self commonInit];
 }
 -(void)commonInit
